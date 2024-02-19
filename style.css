@@ -1,0 +1,212 @@
+/* Global styles */
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  min-height: 100%;
+  position: relative;
+  border-left: 10px solid #3498db;
+  border-right: 10px solid #3498db;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header h1 {
+  font-size: 36px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+header p {
+  font-size: 18px;
+  animation: slideInLeft 1s ease-in-out;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 100px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+  font-size: 24px;
+  color: #3498db;
+}
+
+ul,
+ol {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+a {
+  color: #0078d4;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Footer styles */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border-top: 2px solid #3498db;
+  transition: background-color 0.3s ease-in-out;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Copyright text styles */
+.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+/* Flex container styles */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Column styles */
+.c1 {
+  margin: 40px 35px 35px 95px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c2 {
+  margin: 115px 35px 35px 35px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.c1:hover,
+.c2:hover {
+  transform: scale(1.05);
+}
+
+/* Animation on hover */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+header:hover {
+  background-color: #2186c4;
+}
+
+header nav ul li a:hover {
+  color: #77b7e0;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+a:hover {
+  color: #0056b3;
+}
+#projects ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-item {
+  margin-bottom: 30px;
+}
+
+.video-wrapper {
+  width: 50%; /* Each video takes half the width */
+  display: inline-block; /* Allows them to sit side-by-side */
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.video-wrapper video {
+  width: 99%;
+}
+
+.project-info {
+  text-align: center; /* Center title and link below the video */
+  margin-top: 10px; /* Add space below video */
+}
+/* ... other styles ...*/
+
+.image-wrapper {
+  width: 50%;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-bottom: 10px; /* Might need adjustment */
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent extra space below image */
+}
